@@ -1,0 +1,27 @@
+# SCR Pipeline - Python Dependencies
+# Production-grade Supreme Court Reports PDF extraction pipeline
+
+# PDF Processing
+pdfplumber==0.10.3           # Primary PDF text extraction (robust, no dependencies)
+
+# HTTP & Network
+requests==2.31.0             # HTTP library for PDF downloads
+
+# Data Processing
+python-dateutil==2.8.2       # Date utilities
+
+# Optional: OCR (for scanned PDFs)
+pytesseract==0.3.10          # Python wrapper for tesseract-ocr
+# Note: Requires tesseract-ocr system package: 
+#   Ubuntu: sudo apt-get install tesseract-ocr
+#   macOS: brew install tesseract
+#   Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
+
+# Development & Testing (optional)
+pytest==7.4.0                # Unit testing
+pytest-cov==4.1.0            # Coverage reporting
+
+# Code Quality (optional)
+black==23.7.0                # Code formatting
+flake8==6.0.0                # Linting
+mypy==1.4.1                  # Type checking
