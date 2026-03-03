@@ -146,3 +146,88 @@ def extract_metadata(text: str) -> Dict:
         "sections_referred": sections_referred,
         "subject_categories": subject_categories,
     }
+from collections import defaultdict
+from src.extraction.pdf_text_extractor import split_text_into_chunks
+
+
+def extract_metadata_with_chunking(full_text: str) -> dict:
+    """
+    Improved metadata extraction using chunk-based parsing.
+
+    Strategy:
+    - Split text into chunks
+    - Extract metadata from each chunk
+    - Merge strongest signals
+    """
+
+    if not full_text:
+        return {}
+
+    chunks = split_text_into_chunks(full_text)
+
+    aggregated = {
+        "court": "",
+        "case_number": "",
+        "petition_type": "",
+        "petition_format": "",
+        "judges": set(),
+        "petitioner": set(),
+        "respondent": set(),
+        "case_name": "",
+        "acts_referred": set(),
+        "sections_referred": set(),
+        "subject_categories": set(),
+    }
+
+    for chunk in chunks:
+        meta = extract_metadata(chunk)
+
+        # Court
+        if not aggregated["court"] and meta.get("court"):
+            aggregated["court"] = meta["court"]
+
+        # Case Number
+        if not aggregated["case_number"] and meta.get("case_number"):
+            aggregated["case_number"] = meta["case_number"]
+
+        # Petition Type
+        if meta.get("petition_type"):
+            aggregated["petition_type"] = meta["petition_type"]
+
+        # Judges
+        for j in meta.get("judges", []):
+            aggregated["judges"].add(j)
+
+        # Parties
+        for p in meta.get("petitioner", []):
+            aggregated["petitioner"].add(p)
+
+        for r in meta.get("respondent", []):
+            aggregated["respondent"].add(r)
+
+        # Acts
+        for act in meta.get("acts_referred", []):
+            aggregated["acts_referred"].add(act)
+
+        # Sections
+        for sec in meta.get("sections_referred", []):
+            aggregated["sections_referred"].add(sec)
+
+        # Subjects
+        for sub in meta.get("subject_categories", []):
+            aggregated["subject_categories"].add(sub)
+
+    # Convert sets back to lists
+    return {
+        "court": aggregated["court"],
+        "case_number": aggregated["case_number"],
+        "petition_type": aggregated["petition_type"],
+        "petition_format": "",
+        "judges": sorted(list(aggregated["judges"])),
+        "petitioner": sorted(list(aggregated["petitioner"])),
+        "respondent": sorted(list(aggregated["respondent"])),
+        "case_name": "",
+        "acts_referred": sorted(list(aggregated["acts_referred"])),
+        "sections_referred": sorted(list(aggregated["sections_referred"])),
+        "subject_categories": sorted(list(aggregated["subject_categories"])),
+    }

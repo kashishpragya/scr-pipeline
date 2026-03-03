@@ -10,7 +10,7 @@ from pathlib import Path
 
 from src.acquisition.sci_judgement_date_client import SCIJudgementDateClient
 from src.extraction.pdf_text_extractor import extract_text_from_pdf
-from src.extraction.scr_metadata_extractor import extract_metadata
+from src.extraction.scr_metadata_extractor import extract_metadata_with_chunking
 
 def classify_petition_type(case_number: str) -> str:
     if not case_number:
@@ -282,7 +282,7 @@ if __name__ == "__main__":
                 skipped_text_fail += 1
                 continue
 
-            pdf_metadata = extract_metadata(text)
+            pdf_metadata = extract_metadata_with_chunking(text)
             unified = build_unified_record(row, pdf_metadata)
             unified_records.append(unified)
 

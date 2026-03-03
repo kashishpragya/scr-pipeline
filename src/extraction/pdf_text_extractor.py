@@ -1,7 +1,32 @@
 import pdfplumber
 from pathlib import Path
 
+def split_text_into_chunks(text: str, chunk_size: int = 3000) -> list:
+    """
+    Splits long PDF text into smaller chunks.
 
+    Args:
+        text (str): Full PDF text
+        chunk_size (int): Approximate characters per chunk
+
+    Returns:
+        list[str]: List of text chunks
+    """
+
+    if not text:
+        return []
+
+    chunks = []
+    start = 0
+    text_length = len(text)
+
+    while start < text_length:
+        end = min(start + chunk_size, text_length)
+        chunk = text[start:end]
+        chunks.append(chunk)
+        start = end
+
+    return chunks
 def extract_text_from_pdf(pdf_path: str) -> str:
     """
     Extract full text from a PDF using pdfplumber.
