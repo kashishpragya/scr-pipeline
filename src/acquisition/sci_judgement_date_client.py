@@ -233,7 +233,62 @@ class SCIJudgementDateClient:
         except Exception as e:
             pipeline_logger.error(f"Failed to extract PDF links: {e}")
             return []
+    def extract_rows_with_metadata(self) -> list:
+        """
+        Extract structured metadata from results table.
 
+        Returns:
+            List of dictionaries containing row-level metadata
+        """
+        pipeline_logger.debug("Extracting structured row metadata...")
+
+        try:
+            rows = self.driver.find_elements(By.XPATH, "//table//tbody/tr")
+
+            pipeline_logger.info(f"Found {len(rows)} result rows")
+
+            records = []
+
+            for row in rows:
+                cols = row.find_elements(By.TAG_NAME, "td")
+
+                if len(cols) < 8:
+                    continue
+
+                judgment_cell = cols[7]
+                links = judgment_cell.find_elements(By.TAG_NAME, "a")
+
+                pdf_url = None
+                for link in links:
+                    href = link.get_attribute("href")
+                    if href and href.endswith(".pdf"):
+                        pdf_url = href
+                        break
+
+                record = {
+                    "serial_number": cols[0].text.strip(),
+                    "diary_number": cols[1].text.strip(),
+                    "case_number": cols[2].text.strip(),
+                    "parties": cols[3].text.strip(),
+                    "advocate": cols[4].text.strip(),
+                    "bench": cols[5].text.strip(),
+                    "judgment_by": cols[6].text.strip(),
+                    "judgment_raw": judgment_cell.text.strip(),
+                    "pdf_url": pdf_url,
+                }
+
+                records.append(record)
+
+            pipeline_logger.info(
+                f"✓ Extracted structured metadata for {len(records)} rows"
+            )
+
+            return records
+
+        except Exception as e:
+            pipeline_logger.error(f"Failed to extract structured metadata: {e}")
+            return []
+            
     def search_by_date_range(self, from_date: str, to_date: str) -> list:
         """
         Complete search workflow for a date range.
@@ -282,7 +337,30 @@ class SCIJudgementDateClient:
         except Exception as e:
             pipeline_logger.error(f"Error during date range search: {e}")
             return []
+    def search_with_metadata_by_date_range(self, from_date: str, to_date: str) -> list:
+        """
+        Same as search_by_date_range, but returns structured row metadata.
+        """
 
+        pipeline_logger.info("=" * 70)
+        pipeline_logger.info(f"SEARCHING WITH METADATA: {from_date} → {to_date}")
+        pipeline_logger.info("=" * 70)
+
+        try:
+            self.open_page()
+
+            if not self.fill_dates(from_date, to_date):
+                return []
+
+            if not self.click_search():
+                return []
+
+            return self.extract_rows_with_metadata()
+
+        except Exception as e:
+            pipeline_logger.error(f"Error during metadata search: {e}")
+            return []
+        
     def close(self):
         """Close browser and cleanup."""
         try:
