@@ -3,7 +3,7 @@
     "court": "Supreme Court of India",
     "case_number": "SLP(Crl) No.-000380 - 2021",
     "petition_type": "Special Leave Petition (Criminal)",
-    "petition_format": "",
+    "petition_format": "SLP(Crl) No.-000380 - 2021",
     "judges": [
       "Mohan M. Shantanagoudar",
       "Vineet Saran",
@@ -18,10 +18,22 @@
     "case_name": "SMT. REKHA SENGAR v. THE STATE OF MADHYA PRADESH",
     "acts_referred": [
       "Code of Criminal Procedure",
+      "Constitution of India",
+      "Evidence Act",
       "Indian Penal Code"
     ],
-    "sections_referred": [],
+    "sections_referred": [
+      "Article 115",
+      "Section 23",
+      "Section 27",
+      "Section 439",
+      "Section 5",
+      "Section 506",
+      "Section 6",
+      "Section 7"
+    ],
     "subject_categories": [
+      "Constitutional Law",
       "Criminal Law"
     ]
   },
@@ -29,7 +41,7 @@
     "court": "Supreme Court of India",
     "case_number": "W.P.(C) No.-000026 - 2020",
     "petition_type": "Writ Petition",
-    "petition_format": "",
+    "petition_format": "W.P.(C) No.-000026 - 2020",
     "judges": [
       "Rohinton Fali Nariman",
       "K.M. Joseph",
@@ -44,11 +56,202 @@
     "case_name": "MANISH KUMAR v. UNION OF INDIA",
     "acts_referred": [
       "Code of Criminal Procedure",
-      "Constitution of India"
+      "Constitution of India",
+      "Evidence Act"
     ],
-    "sections_referred": [],
+    "sections_referred": [
+      "Article 113",
+      "Article 137",
+      "Article 14",
+      "Article 142",
+      "Article 16",
+      "Article 19",
+      "Article 21",
+      "Article 226",
+      "Article 30",
+      "Article 300A",
+      "Article 32",
+      "Article 73",
+      "Article 82",
+      "Section 1",
+      "Section 10",
+      "Section 100",
+      "Section 101",
+      "Section 102",
+      "Section 103",
+      "Section 104",
+      "Section 106",
+      "Section 107",
+      "Section 109",
+      "Section 11",
+      "Section 110",
+      "Section 110-A",
+      "Section 110A",
+      "Section 111",
+      "Section 113",
+      "Section 116",
+      "Section 12",
+      "Section 121",
+      "Section 122",
+      "Section 12A",
+      "Section 13",
+      "Section 134",
+      "Section 135",
+      "Section 14",
+      "Section 140",
+      "Section 141",
+      "Section 147",
+      "Section 148",
+      "Section 15",
+      "Section 153-C",
+      "Section 156",
+      "Section 16",
+      "Section 163",
+      "Section 164",
+      "Section 165",
+      "Section 167",
+      "Section 17",
+      "Section 172",
+      "Section 179",
+      "Section 18",
+      "Section 181",
+      "Section 184",
+      "Section 187",
+      "Section 188",
+      "Section 19",
+      "Section 191",
+      "Section 2",
+      "Section 20",
+      "Section 200",
+      "Section 2018",
+      "Section 206",
+      "Section 207",
+      "Section 209",
+      "Section 21",
+      "Section 210",
+      "Section 217",
+      "Section 218",
+      "Section 219",
+      "Section 22",
+      "Section 2201",
+      "Section 227",
+      "Section 23",
+      "Section 232",
+      "Section 234",
+      "Section 235",
+      "Section 237",
+      "Section 238A",
+      "Section 239",
+      "Section 24",
+      "Section 240",
+      "Section 241",
+      "Section 244",
+      "Section 245",
+      "Section 246",
+      "Section 248",
+      "Section 249",
+      "Section 25",
+      "Section 252",
+      "Section 257",
+      "Section 25A",
+      "Section 26",
+      "Section 260",
+      "Section 266",
+      "Section 267",
+      "Section 27",
+      "Section 271",
+      "Section 275",
+      "Section 276",
+      "Section 28",
+      "Section 282",
+      "Section 283",
+      "Section 29",
+      "Section 29-A",
+      "Section 299",
+      "Section 29A",
+      "Section 3",
+      "Section 3-D",
+      "Section 30",
+      "Section 305",
+      "Section 31",
+      "Section 312",
+      "Section 317",
+      "Section 32",
+      "Section 320",
+      "Section 321",
+      "Section 32A",
+      "Section 33",
+      "Section 34",
+      "Section 340",
+      "Section 345",
+      "Section 35",
+      "Section 3500",
+      "Section 358",
+      "Section 36",
+      "Section 37",
+      "Section 370",
+      "Section 372",
+      "Section 38",
+      "Section 397",
+      "Section 398",
+      "Section 399",
+      "Section 3A",
+      "Section 4",
+      "Section 408",
+      "Section 42",
+      "Section 425",
+      "Section 43",
+      "Section 44",
+      "Section 45",
+      "Section 458",
+      "Section 47",
+      "Section 48",
+      "Section 5",
+      "Section 50",
+      "Section 51",
+      "Section 52",
+      "Section 53",
+      "Section 54",
+      "Section 55",
+      "Section 56",
+      "Section 57",
+      "Section 58",
+      "Section 59",
+      "Section 6",
+      "Section 60",
+      "Section 60-",
+      "Section 61",
+      "Section 63",
+      "Section 65",
+      "Section 66",
+      "Section 66A",
+      "Section 67",
+      "Section 68",
+      "Section 6A",
+      "Section 7",
+      "Section 71",
+      "Section 72",
+      "Section 73",
+      "Section 76",
+      "Section 77",
+      "Section 78",
+      "Section 79",
+      "Section 8",
+      "Section 83",
+      "Section 85",
+      "Section 87",
+      "Section 88",
+      "Section 89",
+      "Section 9",
+      "Section 90",
+      "Section 921",
+      "Section 94",
+      "Section 95",
+      "Section 97",
+      "Section 98",
+      "Section 99"
+    ],
     "subject_categories": [
-      "Civil Law",
       "Constitutional Law"
     ]
   },
@@ -56,7 +259,7 @@
     "court": "Supreme Court of India",
     "case_number": "W.P.(C) No.-000078 - 2021",
     "petition_type": "Writ Petition",
-    "petition_format": "",
+    "petition_format": "W.P.(C) No.-000078 - 2021",
     "judges": [
       "Chief Justice Of India",
       "Indira Banerjee"
@@ -68,17 +271,23 @@
       "UNION OF INDIA"
     ],
     "case_name": "MANJIT v. UNION OF INDIA",
-    "acts_referred": [],
-    "sections_referred": [],
+    "acts_referred": [
+      "Constitution of India"
+    ],
+    "sections_referred": [
+      "Article 16",
+      "Article 32",
+      "Section 14"
+    ],
     "subject_categories": [
-      "Civil Law"
+      "Constitutional Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "R.P.(C) No.-000472 - 2018",
     "petition_type": "Review Petition (Civil)",
-    "petition_format": "",
+    "petition_format": "R.P.(C) No.-000472 - 2018",
     "judges": [
       "Chief Justice Of India",
       "A.S. Bopanna",
@@ -93,13 +302,15 @@
     "case_name": "ANJALI BRAHMAWAR CHAUHAN v. NAVIN CHAUHAN",
     "acts_referred": [],
     "sections_referred": [],
-    "subject_categories": []
+    "subject_categories": [
+      "Civil Law"
+    ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "W.P.(C) No.-000114-000114 - 2014",
     "petition_type": "Writ Petition",
-    "petition_format": "",
+    "petition_format": "W.P.(C) No.-000114-000114 - 2014",
     "judges": [
       "Madan B. Lokur",
       "Deepak Gupta"
@@ -112,17 +323,30 @@
     ],
     "case_name": "COMMON CAUSE v. UNION OF INDIA .",
     "acts_referred": [],
-    "sections_referred": [],
+    "sections_referred": [
+      "Section 1",
+      "Section 11",
+      "Section 131281",
+      "Section 17",
+      "Section 179704",
+      "Section 21",
+      "Section 27",
+      "Section 3",
+      "Section 4",
+      "Section 6",
+      "Section 8",
+      "Section 8A",
+      "Section 9"
+    ],
     "subject_categories": [
-      "Civil Law",
-      "Constitutional Law"
+      "Civil Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-007469-007469 - 2008",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-007469-007469 - 2008",
     "judges": [
       "Chief Justice Of India",
       "Indira Banerjee"
@@ -135,7 +359,28 @@
     ],
     "case_name": "M/S. PADIA TIMBER CO. P. LTD. v. THE BOARD OF TRUSTEES OF VISAKHAPATNAM PORT TRUST THROUGH ITS SECRETARY",
     "acts_referred": [],
-    "sections_referred": [],
+    "sections_referred": [
+      "Section 1",
+      "Section 10",
+      "Section 12",
+      "Section 14",
+      "Section 15",
+      "Section 189",
+      "Section 2",
+      "Section 2196",
+      "Section 33",
+      "Section 34",
+      "Section 37",
+      "Section 4",
+      "Section 450",
+      "Section 47",
+      "Section 5",
+      "Section 67",
+      "Section 7",
+      "Section 73",
+      "Section 75",
+      "Section 9"
+    ],
     "subject_categories": [
       "Civil Law"
     ]
@@ -144,7 +389,7 @@
     "court": "Supreme Court of India",
     "case_number": "Crl.A. No.-000022-000023 - 2021",
     "petition_type": "Criminal Appeal",
-    "petition_format": "",
+    "petition_format": "Crl.A. No.-000022-000023 - 2021",
     "judges": [
       "Chief Justice Of India",
       "Aniruddha Bose"
@@ -159,14 +404,33 @@
     "acts_referred": [
       "Indian Penal Code"
     ],
-    "sections_referred": [],
-    "subject_categories": []
+    "sections_referred": [
+      "Section 11",
+      "Section 13538",
+      "Section 18",
+      "Section 22",
+      "Section 22306",
+      "Section 23307",
+      "Section 300",
+      "Section 302",
+      "Section 304",
+      "Section 307",
+      "Section 324",
+      "Section 325",
+      "Section 34",
+      "Section 341",
+      "Section 7",
+      "Section 8973"
+    ],
+    "subject_categories": [
+      "Criminal Law"
+    ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "Crl.A. No.-000006-000006 - 2021",
     "petition_type": "Criminal Appeal",
-    "petition_format": "",
+    "petition_format": "Crl.A. No.-000006-000006 - 2021",
     "judges": [
       "Ashok Bhushan",
       "R. Subhash Reddy",
@@ -181,16 +445,32 @@
     "case_name": "SREI EQUIPMENT FINANCE LTD. v. RAMJAN ALI",
     "acts_referred": [
       "Code of Criminal Procedure",
-      "Indian Penal Code"
+      "Indian Penal Code",
+      "Motor Vehicles Act"
     ],
-    "sections_referred": [],
-    "subject_categories": []
+    "sections_referred": [
+      "Section 10",
+      "Section 12",
+      "Section 19",
+      "Section 2",
+      "Section 25",
+      "Section 364",
+      "Section 482",
+      "Section 5",
+      "Section 51",
+      "Section 55",
+      "Section 56",
+      "Section 7"
+    ],
+    "subject_categories": [
+      "Criminal Law"
+    ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-000012-000012 - 2021",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-000012-000012 - 2021",
     "judges": [
       "A.M. Khanwilkar",
       "Dinesh Maheshwari",
@@ -204,11 +484,297 @@
     ],
     "case_name": "RAJEEV SURI v. UNION OF INDIA",
     "acts_referred": [
-      "Constitution of India"
+      "Constitution of India",
+      "Evidence Act"
     ],
-    "sections_referred": [],
+    "sections_referred": [
+      "Article 1",
+      "Article 13",
+      "Article 139A",
+      "Article 14",
+      "Article 142",
+      "Article 15",
+      "Article 19",
+      "Article 21",
+      "Article 226",
+      "Article 32",
+      "Article 368",
+      "Article 39",
+      "Article 40",
+      "Article 48A",
+      "Article 49",
+      "Article 51",
+      "Article 9",
+      "Section 02",
+      "Section 1",
+      "Section 10",
+      "Section 100",
+      "Section 1000",
+      "Section 104",
+      "Section 105",
+      "Section 106",
+      "Section 108",
+      "Section 109",
+      "Section 11",
+      "Section 11-",
+      "Section 11-A",
+      "Section 110",
+      "Section 112",
+      "Section 113",
+      "Section 114",
+      "Section 115",
+      "Section 116",
+      "Section 117",
+      "Section 119",
+      "Section 11A",
+      "Section 12",
+      "Section 120",
+      "Section 122",
+      "Section 123",
+      "Section 124",
+      "Section 125",
+      "Section 127",
+      "Section 128",
+      "Section 129",
+      "Section 1292",
+      "Section 13",
+      "Section 132",
+      "Section 133",
+      "Section 134",
+      "Section 135",
+      "Section 137",
+      "Section 139",
+      "Section 14",
+      "Section 141",
+      "Section 143",
+      "Section 144",
+      "Section 145",
+      "Section 146",
+      "Section 149",
+      "Section 15",
+      "Section 151",
+      "Section 152",
+      "Section 153",
+      "Section 1542nd",
+      "Section 1545th",
+      "Section 1547th",
+      "Section 155",
+      "Section 1568",
+      "Section 158",
+      "Section 159",
+      "Section 16",
+      "Section 160",
+      "Section 162",
+      "Section 163",
+      "Section 165",
+      "Section 166",
+      "Section 168",
+      "Section 169",
+      "Section 17",
+      "Section 17-",
+      "Section 171",
+      "Section 174",
+      "Section 176",
+      "Section 178",
+      "Section 179",
+      "Section 18",
+      "Section 1808-",
+      "Section 186",
+      "Section 187",
+      "Section 188",
+      "Section 189",
+      "Section 19",
+      "Section 190",
+      "Section 191",
+      "Section 193",
+      "Section 194",
+      "Section 196",
+      "Section 198",
+      "Section 2",
+      "Section 20",
+      "Section 200",
+      "Section 2016",
+      "Section 203",
+      "Section 203-",
+      "Section 205",
+      "Section 206",
+      "Section 208",
+      "Section 209",
+      "Section 21",
+      "Section 211",
+      "Section 212",
+      "Section 215",
+      "Section 22",
+      "Section 22-A",
+      "Section 220",
+      "Section 222",
+      "Section 223",
+      "Section 224",
+      "Section 225",
+      "Section 226",
+      "Section 227",
+      "Section 22A",
+      "Section 23",
+      "Section 230",
+      "Section 232",
+      "Section 233",
+      "Section 234",
+      "Section 235",
+      "Section 24",
+      "Section 244",
+      "Section 245",
+      "Section 247",
+      "Section 25",
+      "Section 250",
+      "Section 252",
+      "Section 254",
+      "Section 255",
+      "Section 257",
+      "Section 258",
+      "Section 26",
+      "Section 262",
+      "Section 263",
+      "Section 265",
+      "Section 266",
+      "Section 267",
+      "Section 27",
+      "Section 270",
+      "Section 274",
+      "Section 276",
+      "Section 28",
+      "Section 283",
+      "Section 284",
+      "Section 289",
+      "Section 29",
+      "Section 291",
+      "Section 297-",
+      "Section 298",
+      "Section 3",
+      "Section 3-",
+      "Section 30",
+      "Section 301",
+      "Section 305",
+      "Section 309",
+      "Section 31",
+      "Section 310",
+      "Section 311",
+      "Section 314",
+      "Section 318",
+      "Section 321",
+      "Section 324",
+      "Section 33",
+      "Section 332",
+      "Section 340",
+      "Section 341",
+      "Section 342",
+      "Section 346",
+      "Section 348",
+      "Section 35",
+      "Section 351",
+      "Section 354",
+      "Section 355",
+      "Section 356",
+      "Section 357",
+      "Section 358",
+      "Section 36",
+      "Section 362",
+      "Section 363",
+      "Section 364",
+      "Section 367",
+      "Section 369",
+      "Section 37",
+      "Section 374",
+      "Section 375",
+      "Section 378",
+      "Section 379",
+      "Section 381",
+      "Section 383",
+      "Section 383-",
+      "Section 387",
+      "Section 388",
+      "Section 39",
+      "Section 390",
+      "Section 392",
+      "Section 395",
+      "Section 396",
+      "Section 4",
+      "Section 40",
+      "Section 402",
+      "Section 405",
+      "Section 406",
+      "Section 41",
+      "Section 417",
+      "Section 42",
+      "Section 424",
+      "Section 429",
+      "Section 43",
+      "Section 44",
+      "Section 45",
+      "Section 457",
+      "Section 46",
+      "Section 47",
+      "Section 48",
+      "Section 49",
+      "Section 49th",
+      "Section 4th",
+      "Section 5",
+      "Section 50",
+      "Section 50th",
+      "Section 51",
+      "Section 52",
+      "Section 53",
+      "Section 538",
+      "Section 54",
+      "Section 548",
+      "Section 55",
+      "Section 56",
+      "Section 564",
+      "Section 57",
+      "Section 58",
+      "Section 59",
+      "Section 5th",
+      "Section 6",
+      "Section 60",
+      "Section 61",
+      "Section 62",
+      "Section 63",
+      "Section 634",
+      "Section 638",
+      "Section 64",
+      "Section 65",
+      "Section 66",
+      "Section 6855",
+      "Section 69",
+      "Section 7",
+      "Section 71",
+      "Section 72",
+      "Section 726",
+      "Section 77",
+      "Section 776",
+      "Section 78",
+      "Section 79",
+      "Section 8",
+      "Section 80",
+      "Section 81",
+      "Section 82",
+      "Section 84",
+      "Section 85",
+      "Section 86",
+      "Section 87",
+      "Section 88",
+      "Section 89",
+      "Section 9",
+      "Section 91",
+      "Section 92",
+      "Section 922",
+      "Section 93",
+      "Section 94",
+      "Section 941",
+      "Section 95",
+      "Section 98",
+      "Section 99"
+    ],
     "subject_categories": [
-      "Civil Law",
       "Constitutional Law"
     ]
   },
@@ -216,7 +782,7 @@
     "court": "Supreme Court of India",
     "case_number": "Crl.A. No.-000024-000024 - 2021",
     "petition_type": "Criminal Appeal",
-    "petition_format": "",
+    "petition_format": "Crl.A. No.-000024-000024 - 2021",
     "judges": [
       "Chief Justice Of India",
       "Aniruddha Bose"
@@ -233,17 +799,30 @@
       "Indian Penal Code"
     ],
     "sections_referred": [
-      "307",
-      "324",
-      "341"
+      "Section 1",
+      "Section 10",
+      "Section 13",
+      "Section 147",
+      "Section 1500",
+      "Section 2000",
+      "Section 3",
+      "Section 307",
+      "Section 320",
+      "Section 324",
+      "Section 326",
+      "Section 34",
+      "Section 341",
+      "Section 7"
     ],
-    "subject_categories": []
+    "subject_categories": [
+      "Criminal Law"
+    ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-000013-000013 - 2021",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-000013-000013 - 2021",
     "judges": [
       "Ashok Bhushan",
       "R. Subhash Reddy",
@@ -257,17 +836,29 @@
     ],
     "case_name": "THE CHAIRPERSON GOVERNING BODY DAULAT RAM COLLEGE v. DR. ASHA",
     "acts_referred": [],
-    "sections_referred": [],
+    "sections_referred": [
+      "Section 13",
+      "Section 15",
+      "Section 18",
+      "Section 2",
+      "Section 20",
+      "Section 21",
+      "Section 30",
+      "Section 300",
+      "Section 31",
+      "Section 41",
+      "Section 5",
+      "Section 950-"
+    ],
     "subject_categories": [
-      "Civil Law",
-      "Constitutional Law"
+      "Civil Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-004035-004037 - 2020",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-004035-004037 - 2020",
     "judges": [
       "Chief Justice Of India",
       "L. Nageswara Rao",
@@ -281,14 +872,29 @@
     ],
     "case_name": "THE NATIONAL HIGHWAYS AUTHORITY OF INDIA v. PANDARINATHAN GOVINDARAJULU",
     "acts_referred": [],
-    "sections_referred": [],
-    "subject_categories": []
+    "sections_referred": [
+      "Section 10",
+      "Section 16",
+      "Section 18",
+      "Section 2",
+      "Section 20",
+      "Section 22",
+      "Section 3",
+      "Section 4",
+      "Section 4035-",
+      "Section 5",
+      "Section 6",
+      "Section 8"
+    ],
+    "subject_categories": [
+      "Civil Law"
+    ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "Crl.A. No.-001256-001256 - 2017",
     "petition_type": "Criminal Appeal",
-    "petition_format": "",
+    "petition_format": "Crl.A. No.-001256-001256 - 2017",
     "judges": [
       "Chief Justice Of India",
       "Hemant Gupta",
@@ -303,13 +909,40 @@
     "case_name": "HARI OM @ HERO v. STATE OF U.P.",
     "acts_referred": [
       "Code of Criminal Procedure",
+      "Evidence Act",
       "Indian Penal Code"
     ],
     "sections_referred": [
-      "302",
-      "394",
-      "396",
-      "412"
+      "Section 1",
+      "Section 10",
+      "Section 12",
+      "Section 13",
+      "Section 161",
+      "Section 22",
+      "Section 235",
+      "Section 235-",
+      "Section 24",
+      "Section 25",
+      "Section 26",
+      "Section 27",
+      "Section 28th",
+      "Section 3",
+      "Section 302",
+      "Section 3316",
+      "Section 366",
+      "Section 368",
+      "Section 394",
+      "Section 396",
+      "Section 4",
+      "Section 412",
+      "Section 43",
+      "Section 5",
+      "Section 6",
+      "Section 7",
+      "Section 8",
+      "Section 8914",
+      "Section 8963",
+      "Section 9087"
     ],
     "subject_categories": [
       "Criminal Law"
@@ -319,7 +952,7 @@
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-002760-002760 - 2010",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-002760-002760 - 2010",
     "judges": [
       "Ashok Bhushan",
       "R. Subhash Reddy",
@@ -333,7 +966,11 @@
     ],
     "case_name": "INDIAN BANK v. MAHAVEER KHARIWAL",
     "acts_referred": [],
-    "sections_referred": [],
+    "sections_referred": [
+      "Section 12",
+      "Section 13",
+      "Section 4"
+    ],
     "subject_categories": [
       "Civil Law"
     ]
@@ -342,7 +979,7 @@
     "court": "Supreme Court of India",
     "case_number": "CONMT.PET.(C) No.-000092-000092 - 2008",
     "petition_type": "Contempt Petition",
-    "petition_format": "",
+    "petition_format": "CONMT.PET.(C) No.-000092-000092 - 2008",
     "judges": [
       "A.M. Khanwilkar",
       "Chief Justice Of India",
@@ -356,18 +993,56 @@
     ],
     "case_name": "RAMA NARANG v. RAMESH NARANG",
     "acts_referred": [
-      "Constitution of India"
+      "Constitution of India",
+      "Income Tax Act"
     ],
-    "sections_referred": [],
+    "sections_referred": [
+      "Article 139-A",
+      "Article 142",
+      "Section 1",
+      "Section 10",
+      "Section 11",
+      "Section 12",
+      "Section 17",
+      "Section 2",
+      "Section 20",
+      "Section 2000",
+      "Section 212",
+      "Section 24",
+      "Section 265-",
+      "Section 27",
+      "Section 29",
+      "Section 3000",
+      "Section 33",
+      "Section 351",
+      "Section 366",
+      "Section 37",
+      "Section 397",
+      "Section 398",
+      "Section 399",
+      "Section 403",
+      "Section 47",
+      "Section 48",
+      "Section 51",
+      "Section 54",
+      "Section 56",
+      "Section 59",
+      "Section 6",
+      "Section 67",
+      "Section 69",
+      "Section 7",
+      "Section 8",
+      "Section 9-A"
+    ],
     "subject_categories": [
-      "Civil Law"
+      "Constitutional Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-000142-000142 - 2021",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-000142-000142 - 2021",
     "judges": [
       "L. Nageswara Rao",
       "S. Abdul Nazeer",
@@ -381,17 +1056,26 @@
     ],
     "case_name": "THE STATE OF UTTARAKHAND v. SURESHWATI",
     "acts_referred": [],
-    "sections_referred": [],
+    "sections_referred": [
+      "Section 10",
+      "Section 11-A",
+      "Section 12",
+      "Section 13",
+      "Section 23",
+      "Section 25-B",
+      "Section 3",
+      "Section 33",
+      "Section 9"
+    ],
     "subject_categories": [
-      "Civil Law",
-      "Constitutional Law"
+      "Civil Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-000094-000094 - 2021",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-000094-000094 - 2021",
     "judges": [
       "Chief Justice Of India"
     ],
@@ -405,16 +1089,20 @@
     "acts_referred": [
       "Constitution of India"
     ],
-    "sections_referred": [],
+    "sections_referred": [
+      "Section 12",
+      "Section 141",
+      "Section 5"
+    ],
     "subject_categories": [
-      "Civil Law"
+      "Constitutional Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-001322-001323 - 2019",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-001322-001323 - 2019",
     "judges": [
       "Sanjay Kishan Kaul",
       "Dinesh Maheshwari",
@@ -430,7 +1118,47 @@
     "acts_referred": [
       "Constitution of India"
     ],
-    "sections_referred": [],
+    "sections_referred": [
+      "Article 226",
+      "Article 286",
+      "Section 1",
+      "Section 10",
+      "Section 11",
+      "Section 11057059",
+      "Section 12",
+      "Section 13",
+      "Section 1322-",
+      "Section 14",
+      "Section 147",
+      "Section 15",
+      "Section 16",
+      "Section 2",
+      "Section 20",
+      "Section 2552",
+      "Section 27",
+      "Section 28",
+      "Section 3",
+      "Section 30",
+      "Section 31",
+      "Section 34",
+      "Section 3454968",
+      "Section 37",
+      "Section 38",
+      "Section 4",
+      "Section 4124375",
+      "Section 42",
+      "Section 5",
+      "Section 55",
+      "Section 58",
+      "Section 60",
+      "Section 7",
+      "Section 74",
+      "Section 75",
+      "Section 8",
+      "Section 8277263",
+      "Section 86",
+      "Section 9"
+    ],
     "subject_categories": [
       "Constitutional Law"
     ]
@@ -439,7 +1167,7 @@
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-005189-005192 - 2017",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-005189-005192 - 2017",
     "judges": [
       "S. Abdul Nazeer",
       "A.S. Bopanna",
@@ -455,7 +1183,30 @@
     "acts_referred": [
       "Constitution of India"
     ],
-    "sections_referred": [],
+    "sections_referred": [
+      "Article 14",
+      "Article 16",
+      "Article 229",
+      "Section 10",
+      "Section 108",
+      "Section 13",
+      "Section 14",
+      "Section 16",
+      "Section 18",
+      "Section 2",
+      "Section 2001",
+      "Section 3",
+      "Section 33",
+      "Section 37",
+      "Section 392",
+      "Section 4",
+      "Section 4000",
+      "Section 45",
+      "Section 489",
+      "Section 5000",
+      "Section 5189",
+      "Section 8"
+    ],
     "subject_categories": [
       "Constitutional Law"
     ]
@@ -464,7 +1215,7 @@
     "court": "Supreme Court of India",
     "case_number": "Crl.A. No.-000039-000039 - 2021",
     "petition_type": "Criminal Appeal",
-    "petition_format": "",
+    "petition_format": "Crl.A. No.-000039-000039 - 2021",
     "judges": [
       "Ashok Bhushan",
       "R. Subhash Reddy",
@@ -478,16 +1229,19 @@
     ],
     "case_name": "S. SUNDARA KUMAR v. STATE REPRESENTED BY THE INSPECTOR OF POLICE",
     "acts_referred": [],
-    "sections_referred": [],
+    "sections_referred": [
+      "Section 5",
+      "Section 7"
+    ],
     "subject_categories": [
-      "Criminal Law"
+      "Civil Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-000019-000020 - 2021",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-000019-000020 - 2021",
     "judges": [
       "Chief Justice Of India",
       "Aniruddha Bose"
@@ -500,16 +1254,44 @@
     ],
     "case_name": "KIRTI v. ORIENTAL INSURANCE COMPANY LIMITED",
     "acts_referred": [
-      "Indian Penal Code"
+      "Indian Penal Code",
+      "Motor Vehicles Act"
     ],
-    "sections_referred": [],
-    "subject_categories": []
+    "sections_referred": [
+      "Article 11",
+      "Section 10",
+      "Section 11",
+      "Section 12",
+      "Section 13",
+      "Section 14",
+      "Section 16",
+      "Section 166",
+      "Section 168",
+      "Section 18728",
+      "Section 19",
+      "Section 2",
+      "Section 22",
+      "Section 279",
+      "Section 3",
+      "Section 3000",
+      "Section 33",
+      "Section 36",
+      "Section 40",
+      "Section 6",
+      "Section 6197",
+      "Section 7",
+      "Section 8",
+      "Section 97"
+    ],
+    "subject_categories": [
+      "Criminal Law"
+    ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "Crl.A. No.-001919-001919 - 2010",
     "petition_type": "Criminal Appeal",
-    "petition_format": "",
+    "petition_format": "Crl.A. No.-001919-001919 - 2010",
     "judges": [
       "Chief Justice Of India",
       "Aniruddha Bose"
@@ -526,8 +1308,22 @@
       "Indian Penal Code"
     ],
     "sections_referred": [
-      "361",
-      "376"
+      "Section 08",
+      "Section 1",
+      "Section 10",
+      "Section 16",
+      "Section 161",
+      "Section 2",
+      "Section 23",
+      "Section 313",
+      "Section 359",
+      "Section 361",
+      "Section 363",
+      "Section 366",
+      "Section 376",
+      "Section 5",
+      "Section 6",
+      "Section 9"
     ],
     "subject_categories": [
       "Criminal Law"
@@ -537,7 +1333,7 @@
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-005231-005232 - 2016",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-005231-005232 - 2016",
     "judges": [
       "Chief Justice Of India"
     ],
@@ -550,18 +1346,55 @@
     "case_name": "HIMACHAL PRADESH BUS STAND MANAGEMENT AND DEVELOPMENT AUTHORITY (HPBSMDA) v. THE CENTRAL EMPOWERED COMMITTEE",
     "acts_referred": [
       "Code of Criminal Procedure",
-      "Constitution of India"
+      "Constitution of India",
+      "Motor Vehicles Act"
     ],
-    "sections_referred": [],
+    "sections_referred": [
+      "Article 14",
+      "Article 21",
+      "Section 1",
+      "Section 10",
+      "Section 100",
+      "Section 11",
+      "Section 11500",
+      "Section 117",
+      "Section 13",
+      "Section 14",
+      "Section 144",
+      "Section 15",
+      "Section 19",
+      "Section 2",
+      "Section 21",
+      "Section 22",
+      "Section 28",
+      "Section 3",
+      "Section 30",
+      "Section 3324",
+      "Section 4",
+      "Section 40",
+      "Section 41",
+      "Section 43",
+      "Section 44",
+      "Section 5",
+      "Section 5229-",
+      "Section 5231-",
+      "Section 545",
+      "Section 6",
+      "Section 6265",
+      "Section 7",
+      "Section 9",
+      "Section 90-",
+      "Section 9945"
+    ],
     "subject_categories": [
-      "Civil Law"
+      "Constitutional Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "W.P.(C) No.-001039 - 2020",
     "petition_type": "Writ Petition",
-    "petition_format": "",
+    "petition_format": "W.P.(C) No.-001039 - 2020",
     "judges": [
       "Ashok Bhushan",
       "R. Subhash Reddy",
@@ -577,9 +1410,25 @@
     "acts_referred": [
       "Constitution of India"
     ],
-    "sections_referred": [],
+    "sections_referred": [
+      "Article 21",
+      "Article 32",
+      "Article 47",
+      "Section 1-",
+      "Section 10",
+      "Section 11",
+      "Section 12",
+      "Section 2",
+      "Section 24",
+      "Section 27",
+      "Section 30",
+      "Section 4",
+      "Section 5",
+      "Section 6",
+      "Section 7",
+      "Section 9"
+    ],
     "subject_categories": [
-      "Civil Law",
       "Constitutional Law"
     ]
   },
@@ -587,7 +1436,7 @@
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-004221 - 2020",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-004221 - 2020",
     "judges": [
       "Indira Banerjee",
       "Chief Justice Of India"
@@ -600,7 +1449,31 @@
     ],
     "case_name": "M/S RELIANCE ASSET RECONSTRUCTION COMPANY LTD. v. M/S HOTEL POONJA INTERNATIONAL PVT. LTD.",
     "acts_referred": [],
-    "sections_referred": [],
+    "sections_referred": [
+      "Article 137",
+      "Section 1",
+      "Section 113",
+      "Section 12",
+      "Section 14",
+      "Section 145",
+      "Section 18",
+      "Section 19",
+      "Section 1st",
+      "Section 2",
+      "Section 23",
+      "Section 25",
+      "Section 3",
+      "Section 40",
+      "Section 5",
+      "Section 6",
+      "Section 60",
+      "Section 62",
+      "Section 65",
+      "Section 7",
+      "Section 72",
+      "Section 75",
+      "Section 97"
+    ],
     "subject_categories": [
       "Civil Law"
     ]
@@ -609,7 +1482,7 @@
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-000251-000252 - 2021",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-000251-000252 - 2021",
     "judges": [
       "L. Nageswara Rao",
       "S. Abdul Nazeer",
@@ -622,15 +1495,34 @@
       "GILLAPUKRI TEA COMPANY LIMITED"
     ],
     "case_name": "ASSAM INDUSTRIAL DEVELOPMENT CORPORATION LTD v. GILLAPUKRI TEA COMPANY LIMITED",
-    "acts_referred": [],
-    "sections_referred": [],
-    "subject_categories": []
+    "acts_referred": [
+      "Constitution of India"
+    ],
+    "sections_referred": [
+      "Section 1",
+      "Section 12",
+      "Section 15",
+      "Section 17",
+      "Section 18",
+      "Section 219",
+      "Section 24",
+      "Section 4",
+      "Section 5",
+      "Section 6",
+      "Section 7",
+      "Section 79",
+      "Section 8",
+      "Section 9"
+    ],
+    "subject_categories": [
+      "Constitutional Law"
+    ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "W.P.(C) No.-001107 - 2020",
     "petition_type": "Writ Petition",
-    "petition_format": "",
+    "petition_format": "W.P.(C) No.-001107 - 2020",
     "judges": [
       "Sanjay Kishan Kaul",
       "Dinesh Maheshwari",
@@ -644,14 +1536,22 @@
     "acts_referred": [
       "Constitution of India"
     ],
-    "sections_referred": [],
-    "subject_categories": []
+    "sections_referred": [
+      "Article 124",
+      "Article 145",
+      "Section 214",
+      "Section 3",
+      "Section 4"
+    ],
+    "subject_categories": [
+      "Constitutional Law"
+    ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-003974-003975 - 2020",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-003974-003975 - 2020",
     "judges": [
       "Chief Justice Of India",
       "Indira Banerjee"
@@ -666,7 +1566,42 @@
     "acts_referred": [
       "Constitution of India"
     ],
-    "sections_referred": [],
+    "sections_referred": [
+      "Article 14",
+      "Article 142",
+      "Article 16",
+      "Article 226",
+      "Article 234",
+      "Article 235",
+      "Section 1",
+      "Section 10",
+      "Section 11",
+      "Section 11798-",
+      "Section 138",
+      "Section 14",
+      "Section 17",
+      "Section 1955",
+      "Section 1958",
+      "Section 1970",
+      "Section 1991",
+      "Section 19917",
+      "Section 1st",
+      "Section 2",
+      "Section 2018",
+      "Section 22",
+      "Section 234",
+      "Section 2nd",
+      "Section 3974-",
+      "Section 40",
+      "Section 5-",
+      "Section 52",
+      "Section 6",
+      "Section 60",
+      "Section 69",
+      "Section 7",
+      "Section 75-",
+      "Section 9"
+    ],
     "subject_categories": [
       "Constitutional Law"
     ]
@@ -675,7 +1610,7 @@
     "court": "Supreme Court of India",
     "case_number": "SLP(C) No.-015870 - 2020",
     "petition_type": "Special Leave Petition (Civil)",
-    "petition_format": "",
+    "petition_format": "SLP(C) No.-015870 - 2020",
     "judges": [
       "Indira Banerjee",
       "Chief Justice Of India"
@@ -688,16 +1623,35 @@
     ],
     "case_name": "COMMERCIAL TAXES OFFICER v. M/S BHAGAT SINGH",
     "acts_referred": [
-      "Constitution of India"
+      "Constitution of India",
+      "Motor Vehicles Act"
     ],
-    "sections_referred": [],
-    "subject_categories": []
+    "sections_referred": [
+      "Article 136",
+      "Section 1",
+      "Section 10",
+      "Section 10A",
+      "Section 10B",
+      "Section 13",
+      "Section 16",
+      "Section 17",
+      "Section 2",
+      "Section 20",
+      "Section 26",
+      "Section 3",
+      "Section 43-A",
+      "Section 5",
+      "Section 72"
+    ],
+    "subject_categories": [
+      "Constitutional Law"
+    ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "Crl.A. No.-000029-000029 - 2021",
     "petition_type": "Criminal Appeal",
-    "petition_format": "",
+    "petition_format": "Crl.A. No.-000029-000029 - 2021",
     "judges": [
       "Rohinton Fali Nariman",
       "Navin Sinha",
@@ -714,14 +1668,21 @@
       "Code of Criminal Procedure",
       "Indian Penal Code"
     ],
-    "sections_referred": [],
-    "subject_categories": []
+    "sections_referred": [
+      "Section 12",
+      "Section 302",
+      "Section 313",
+      "Section 72"
+    ],
+    "subject_categories": [
+      "Criminal Law"
+    ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-000268-000269 - 2021",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-000268-000269 - 2021",
     "judges": [
       "Ashok Bhushan",
       "R. Subhash Reddy",
@@ -734,15 +1695,35 @@
       "CHANCELLOR"
     ],
     "case_name": "POORAN CHAND v. CHANCELLOR",
-    "acts_referred": [],
-    "sections_referred": [],
-    "subject_categories": []
+    "acts_referred": [
+      "Constitution of India"
+    ],
+    "sections_referred": [
+      "Article 226",
+      "Section 10",
+      "Section 13",
+      "Section 14",
+      "Section 17665-",
+      "Section 26",
+      "Section 268-",
+      "Section 3",
+      "Section 4",
+      "Section 42",
+      "Section 53",
+      "Section 68",
+      "Section 7",
+      "Section 8",
+      "Section 9"
+    ],
+    "subject_categories": [
+      "Constitutional Law"
+    ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "Crl.A. No.-000047-000048 - 2021",
     "petition_type": "Criminal Appeal",
-    "petition_format": "",
+    "petition_format": "Crl.A. No.-000047-000048 - 2021",
     "judges": [
       "Sanjay Kishan Kaul",
       "Dinesh Maheshwari",
@@ -760,16 +1741,36 @@
       "Indian Penal Code"
     ],
     "sections_referred": [
-      "34",
-      "397"
+      "Section 18",
+      "Section 2",
+      "Section 3",
+      "Section 307",
+      "Section 31",
+      "Section 34",
+      "Section 360",
+      "Section 379",
+      "Section 380",
+      "Section 381",
+      "Section 382",
+      "Section 397",
+      "Section 4",
+      "Section 404",
+      "Section 420",
+      "Section 47-",
+      "Section 5",
+      "Section 6",
+      "Section 6283-",
+      "Section 7"
     ],
-    "subject_categories": []
+    "subject_categories": [
+      "Criminal Law"
+    ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-005785 - 2019",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-005785 - 2019",
     "judges": [
       "L. Nageswara Rao",
       "Indu Malhotra",
@@ -782,8 +1783,55 @@
       "ABHISHEK KHANNA"
     ],
     "case_name": "IREO GRACE REALTECH PVT. LTD. v. ABHISHEK KHANNA",
-    "acts_referred": [],
-    "sections_referred": [],
+    "acts_referred": [
+      "Motor Vehicles Act"
+    ],
+    "sections_referred": [
+      "Section 1",
+      "Section 10",
+      "Section 11",
+      "Section 12",
+      "Section 13",
+      "Section 14",
+      "Section 143",
+      "Section 15",
+      "Section 16",
+      "Section 165",
+      "Section 166",
+      "Section 167",
+      "Section 175",
+      "Section 18",
+      "Section 19",
+      "Section 199th",
+      "Section 2",
+      "Section 20",
+      "Section 23",
+      "Section 24",
+      "Section 27",
+      "Section 29",
+      "Section 3",
+      "Section 31",
+      "Section 32",
+      "Section 35",
+      "Section 37",
+      "Section 4",
+      "Section 5",
+      "Section 50",
+      "Section 52",
+      "Section 56",
+      "Section 57",
+      "Section 58",
+      "Section 60",
+      "Section 61",
+      "Section 62",
+      "Section 63",
+      "Section 7",
+      "Section 71",
+      "Section 79",
+      "Section 8",
+      "Section 88",
+      "Section 9"
+    ],
     "subject_categories": [
       "Civil Law"
     ]
@@ -792,7 +1840,7 @@
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-000131-000131 - 2021",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-000131-000131 - 2021",
     "judges": [
       "L. Nageswara Rao",
       "S. Abdul Nazeer",
@@ -805,17 +1853,27 @@
       "M/S PAN INDIA CONSULTANTS PVT. LTD."
     ],
     "case_name": "HARYANA SPACE APPLICATION CENTRE (HARSAC) v. M/S PAN INDIA CONSULTANTS PVT. LTD.",
-    "acts_referred": [],
-    "sections_referred": [],
+    "acts_referred": [
+      "Constitution of India"
+    ],
+    "sections_referred": [
+      "Article 227",
+      "Section 10",
+      "Section 12",
+      "Section 28th",
+      "Section 29A",
+      "Section 4",
+      "Section 6"
+    ],
     "subject_categories": [
-      "Civil Law"
+      "Constitutional Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-003802-003803 - 2020",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-003802-003803 - 2020",
     "judges": [
       "Chief Justice Of India",
       "Indu Malhotra",
@@ -832,16 +1890,72 @@
       "Code of Criminal Procedure",
       "Constitution of India"
     ],
-    "sections_referred": [],
+    "sections_referred": [
+      "Article 16",
+      "Article 63",
+      "Section 0",
+      "Section 1",
+      "Section 10",
+      "Section 1044",
+      "Section 107",
+      "Section 11",
+      "Section 12",
+      "Section 13",
+      "Section 13132-",
+      "Section 16",
+      "Section 17",
+      "Section 18",
+      "Section 19",
+      "Section 2",
+      "Section 2010",
+      "Section 22",
+      "Section 226",
+      "Section 24",
+      "Section 29",
+      "Section 29-",
+      "Section 3",
+      "Section 30",
+      "Section 31",
+      "Section 32",
+      "Section 32A",
+      "Section 33",
+      "Section 33A",
+      "Section 34",
+      "Section 346",
+      "Section 35",
+      "Section 36",
+      "Section 37",
+      "Section 38",
+      "Section 3802",
+      "Section 39",
+      "Section 395",
+      "Section 40",
+      "Section 41",
+      "Section 42",
+      "Section 440",
+      "Section 45",
+      "Section 46",
+      "Section 49",
+      "Section 5",
+      "Section 53A",
+      "Section 58",
+      "Section 6",
+      "Section 61",
+      "Section 63",
+      "Section 7",
+      "Section 8",
+      "Section 81",
+      "Section 9"
+    ],
     "subject_categories": [
-      "Civil Law"
+      "Constitutional Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "Crl.A. No.-000062-000062 - 2021",
     "petition_type": "Criminal Appeal",
-    "petition_format": "",
+    "petition_format": "Crl.A. No.-000062-000062 - 2021",
     "judges": [
       "Rohinton Fali Nariman",
       "Navin Sinha",
@@ -855,16 +1969,23 @@
     ],
     "case_name": "RAGINI DWIVEDI @GINI @RAGS v. THE STATE OF KARNATAKA",
     "acts_referred": [],
-    "sections_referred": [],
+    "sections_referred": [
+      "Section 1",
+      "Section 12",
+      "Section 21",
+      "Section 27",
+      "Section 37",
+      "Section 67"
+    ],
     "subject_categories": [
-      "Criminal Law"
+      "Civil Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-009546-009546 - 2013",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-009546-009546 - 2013",
     "judges": [
       "Sanjay Kishan Kaul",
       "Dinesh Maheshwari",
@@ -877,17 +1998,57 @@
       "MALEMPATI SURYAMBA ."
     ],
     "case_name": "VENIGALLA KOTESWARAMMA v. MALEMPATI SURYAMBA .",
-    "acts_referred": [],
-    "sections_referred": [],
+    "acts_referred": [
+      "Constitution of India"
+    ],
+    "sections_referred": [
+      "Section 1",
+      "Section 10",
+      "Section 12",
+      "Section 13",
+      "Section 14",
+      "Section 16",
+      "Section 17",
+      "Section 18",
+      "Section 1887",
+      "Section 19",
+      "Section 2",
+      "Section 20",
+      "Section 21",
+      "Section 22",
+      "Section 25",
+      "Section 250",
+      "Section 2600",
+      "Section 3",
+      "Section 35",
+      "Section 37",
+      "Section 38",
+      "Section 4",
+      "Section 40",
+      "Section 4000",
+      "Section 42",
+      "Section 46",
+      "Section 47",
+      "Section 5",
+      "Section 50",
+      "Section 51",
+      "Section 53",
+      "Section 54",
+      "Section 56",
+      "Section 6",
+      "Section 7",
+      "Section 8",
+      "Section 9"
+    ],
     "subject_categories": [
-      "Civil Law"
+      "Constitutional Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-000155-000155 - 2021",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-000155-000155 - 2021",
     "judges": [
       "L. Nageswara Rao",
       "S. Abdul Nazeer",
@@ -901,17 +2062,35 @@
     ],
     "case_name": "CHINTPURNI MEDICAL COLLEGE AND HOSPITAL v. UNION OF INDIA",
     "acts_referred": [],
-    "sections_referred": [],
+    "sections_referred": [
+      "Section 10",
+      "Section 11",
+      "Section 12",
+      "Section 15",
+      "Section 17",
+      "Section 19",
+      "Section 2",
+      "Section 2011-",
+      "Section 2012-",
+      "Section 2017-",
+      "Section 2019-",
+      "Section 31",
+      "Section 401",
+      "Section 6",
+      "Section 8",
+      "Section 82",
+      "Section 87",
+      "Section 9"
+    ],
     "subject_categories": [
-      "Civil Law",
-      "Constitutional Law"
+      "Civil Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-007343-007350 - 2019",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-007343-007350 - 2019",
     "judges": [
       "Rohinton Fali Nariman",
       "Navin Sinha",
@@ -924,17 +2103,76 @@
       "COMMISSIONER OF INCOME TAX CALICUT"
     ],
     "case_name": "THE MAVILAYI SERVICE COOPERATIVE BANK LTD. v. COMMISSIONER OF INCOME TAX CALICUT",
-    "acts_referred": [],
-    "sections_referred": [],
+    "acts_referred": [
+      "Constitution of India",
+      "Income Tax Act"
+    ],
+    "sections_referred": [
+      "Article 141",
+      "Section 1",
+      "Section 10",
+      "Section 1073-",
+      "Section 11",
+      "Section 12",
+      "Section 13",
+      "Section 133",
+      "Section 147",
+      "Section 15",
+      "Section 162-",
+      "Section 18",
+      "Section 19",
+      "Section 192273",
+      "Section 1969",
+      "Section 2",
+      "Section 20",
+      "Section 22",
+      "Section 23",
+      "Section 24",
+      "Section 26",
+      "Section 263",
+      "Section 29",
+      "Section 3",
+      "Section 31",
+      "Section 32",
+      "Section 33",
+      "Section 36",
+      "Section 39",
+      "Section 4",
+      "Section 40",
+      "Section 5",
+      "Section 50",
+      "Section 52",
+      "Section 56",
+      "Section 59",
+      "Section 6",
+      "Section 60",
+      "Section 617",
+      "Section 7",
+      "Section 7343-",
+      "Section 8",
+      "Section 80-I",
+      "Section 80-IA",
+      "Section 80-P",
+      "Section 80HH",
+      "Section 80HHA",
+      "Section 80HHB",
+      "Section 80HHC",
+      "Section 80HHD",
+      "Section 80J",
+      "Section 80JJ",
+      "Section 80P",
+      "Section 81",
+      "Section 9"
+    ],
     "subject_categories": [
-      "Civil Law"
+      "Constitutional Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "T.P.(C) No.-002344 - 2019",
     "petition_type": "Transfer Petition",
-    "petition_format": "",
+    "petition_format": "T.P.(C) No.-002344 - 2019",
     "judges": [
       "V. Ramasubramanian"
     ],
@@ -946,7 +2184,13 @@
     ],
     "case_name": "AMRUTA BEN HIMANSHU KUMAR SHAH v. HIMANSHU KUMAR PRAVINCHANDRA SHAH",
     "acts_referred": [],
-    "sections_referred": [],
+    "sections_referred": [
+      "Section 10",
+      "Section 14",
+      "Section 6",
+      "Section 7",
+      "Section 9"
+    ],
     "subject_categories": [
       "Civil Law"
     ]
@@ -955,7 +2199,7 @@
     "court": "Supreme Court of India",
     "case_number": "R.P.(Crl.) No.-000671 - 2018",
     "petition_type": "Review Petition (Criminal)",
-    "petition_format": "",
+    "petition_format": "R.P.(Crl.) No.-000671 - 2018",
     "judges": [
       "Ashok Bhushan",
       "R. Subhash Reddy",
@@ -974,9 +2218,26 @@
       "Indian Penal Code"
     ],
     "sections_referred": [
-      "193"
+      "Article 137",
+      "Article 145",
+      "Section 05",
+      "Section 1",
+      "Section 11",
+      "Section 12",
+      "Section 16",
+      "Section 193",
+      "Section 195",
+      "Section 2",
+      "Section 3",
+      "Section 34",
+      "Section 35",
+      "Section 389",
+      "Section 406",
+      "Section 5",
+      "Section 8"
     ],
     "subject_categories": [
+      "Constitutional Law",
       "Criminal Law"
     ]
   },
@@ -984,7 +2245,7 @@
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-006209-006209 - 2010",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-006209-006209 - 2010",
     "judges": [
       "Sanjay Kishan Kaul",
       "Dinesh Maheshwari",
@@ -1000,16 +2261,36 @@
     "acts_referred": [
       "Constitution of India"
     ],
-    "sections_referred": [],
+    "sections_referred": [
+      "Article 300A",
+      "Section 1",
+      "Section 10",
+      "Section 100",
+      "Section 11",
+      "Section 12",
+      "Section 14",
+      "Section 15",
+      "Section 16",
+      "Section 248",
+      "Section 29",
+      "Section 4",
+      "Section 46",
+      "Section 5",
+      "Section 6",
+      "Section 7",
+      "Section 755",
+      "Section 9",
+      "Section 96"
+    ],
     "subject_categories": [
-      "Civil Law"
+      "Constitutional Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "SLP(C) No.-026484 - 2018",
     "petition_type": "Special Leave Petition (Civil)",
-    "petition_format": "",
+    "petition_format": "SLP(C) No.-026484 - 2018",
     "judges": [
       "Chief Justice Of India",
       "A.S. Bopanna",
@@ -1023,7 +2304,10 @@
     ],
     "case_name": "ANKITA MEENA v. UNIVERSITY OF DELHI",
     "acts_referred": [],
-    "sections_referred": [],
+    "sections_referred": [
+      "Section 4",
+      "Section 5"
+    ],
     "subject_categories": [
       "Civil Law"
     ]
@@ -1032,7 +2316,7 @@
     "court": "Supreme Court of India",
     "case_number": "Crl.A. No.-000088-000088 - 2021",
     "petition_type": "Criminal Appeal",
-    "petition_format": "",
+    "petition_format": "Crl.A. No.-000088-000088 - 2021",
     "judges": [
       "Ashok Bhushan",
       "R. Subhash Reddy",
@@ -1047,20 +2331,17 @@
     "case_name": "AJAY KUMAR @ BITTU v. THE STATE OF UTTARAKHAND",
     "acts_referred": [
       "Code of Criminal Procedure",
+      "Constitution of India",
       "Indian Penal Code"
     ],
     "sections_referred": [
-      "147",
-      "148",
-      "149",
-      "307",
-      "323",
-      "324",
-      "452",
-      "504",
-      "506"
+      "Section 10",
+      "Section 147",
+      "Section 319",
+      "Section 446"
     ],
     "subject_categories": [
+      "Constitutional Law",
       "Criminal Law"
     ]
   },
@@ -1068,7 +2349,7 @@
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-014665-014665 - 2015",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-014665-014665 - 2015",
     "judges": [
       "Chief Justice Of India",
       "Aniruddha Bose"
@@ -1083,16 +2364,32 @@
     "acts_referred": [
       "Constitution of India"
     ],
-    "sections_referred": [],
+    "sections_referred": [
+      "Article 226",
+      "Article 227",
+      "Article 33",
+      "Section 1",
+      "Section 13",
+      "Section 16",
+      "Section 17",
+      "Section 2",
+      "Section 22",
+      "Section 226",
+      "Section 34",
+      "Section 37",
+      "Section 5",
+      "Section 7",
+      "Section 8"
+    ],
     "subject_categories": [
-      "Civil Law"
+      "Constitutional Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "MA-002673 - 2019",
     "petition_type": "Miscellaneous Application",
-    "petition_format": "",
+    "petition_format": "MA-002673 - 2019",
     "judges": [
       "Chief Justice Of India",
       "A.S. Bopanna",
@@ -1106,7 +2403,12 @@
     ],
     "case_name": "DARSHAN SINGH v. THE STATE OF PUNJAB SECRETARY RURAL DEVELOPMENT AND PANCHAYAT",
     "acts_referred": [],
-    "sections_referred": [],
+    "sections_referred": [
+      "Section 01",
+      "Section 1",
+      "Section 214",
+      "Section 3"
+    ],
     "subject_categories": [
       "Civil Law"
     ]
@@ -1115,7 +2417,7 @@
     "court": "Supreme Court of India",
     "case_number": "W.P.(C) No.-001352 - 2019",
     "petition_type": "Writ Petition",
-    "petition_format": "",
+    "petition_format": "W.P.(C) No.-001352 - 2019",
     "judges": [
       "Ashok Bhushan",
       "R. Subhash Reddy",
@@ -1129,23 +2431,38 @@
     ],
     "case_name": "MS. X v. THE STATE OF JHARKHAND",
     "acts_referred": [
+      "Constitution of India",
       "Indian Penal Code"
     ],
     "sections_referred": [
-      "376",
-      "448",
-      "506"
+      "Article 32",
+      "Section 1",
+      "Section 17",
+      "Section 228-A",
+      "Section 228A",
+      "Section 25",
+      "Section 3",
+      "Section 354",
+      "Section 357A",
+      "Section 376",
+      "Section 376A",
+      "Section 376B",
+      "Section 376C",
+      "Section 376D",
+      "Section 4",
+      "Section 6",
+      "Section 7"
     ],
     "subject_categories": [
-      "Civil Law",
-      "Constitutional Law"
+      "Constitutional Law",
+      "Criminal Law"
     ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "C.A. No.-000017-000018 - 2021",
     "petition_type": "Civil Appeal",
-    "petition_format": "",
+    "petition_format": "C.A. No.-000017-000018 - 2021",
     "judges": [
       "Vineet Saran",
       "Ajay Rastogi"
@@ -1162,18 +2479,41 @@
       "Indian Penal Code"
     ],
     "sections_referred": [
-      "420",
-      "467",
-      "468",
-      "471"
+      "Article 136",
+      "Article 226",
+      "Article 311",
+      "Article 32",
+      "Section 1",
+      "Section 10",
+      "Section 10000",
+      "Section 10600",
+      "Section 120",
+      "Section 13",
+      "Section 14",
+      "Section 2",
+      "Section 25",
+      "Section 3",
+      "Section 30",
+      "Section 34",
+      "Section 35",
+      "Section 36",
+      "Section 4",
+      "Section 420",
+      "Section 5",
+      "Section 7",
+      "Section 89",
+      "Section 9"
     ],
-    "subject_categories": []
+    "subject_categories": [
+      "Constitutional Law",
+      "Criminal Law"
+    ]
   },
   {
     "court": "Supreme Court of India",
     "case_number": "R.P.(C) No.-000065 - 2021",
     "petition_type": "Review Petition (Civil)",
-    "petition_format": "",
+    "petition_format": "R.P.(C) No.-000065 - 2021",
     "judges": [
       "A.M. Khanwilkar",
       "Chief Justice Of India",
@@ -1187,10 +2527,22 @@
       "JUSTICE K.S.PUTTASWAMY(RETD)"
     ],
     "case_name": "BEGHAR FOUNDATION v. JUSTICE K.S.PUTTASWAMY(RETD)",
-    "acts_referred": [],
-    "sections_referred": [],
+    "acts_referred": [
+      "Constitution of India"
+    ],
+    "sections_referred": [
+      "Article 110",
+      "Article 122",
+      "Section 110",
+      "Section 117",
+      "Section 13",
+      "Section 2",
+      "Section 455-",
+      "Section 6",
+      "Section 7"
+    ],
     "subject_categories": [
-      "Civil Law"
+      "Constitutional Law"
     ]
   }
 ]

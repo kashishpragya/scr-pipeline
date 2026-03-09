@@ -1,3 +1,4 @@
+#python -m src.pipeline.unified_metadata_builder
 import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
@@ -222,7 +223,7 @@ def build_unified_record(table_row: dict, pdf_metadata: dict) -> dict:
             table_row.get("case_number", "")
         ),
 
-        "petition_format": pdf_metadata.get("petition_format", ""),
+        "petition_format": table_row.get("case_number") or pdf_metadata.get("petition_format", ""),
 
         "judges": judges if judges else pdf_metadata.get("judges", []),
 
@@ -242,64 +243,94 @@ def build_unified_record(table_row: dict, pdf_metadata: dict) -> dict:
 # ============================================================
 # MAIN PIPELINE
 # ============================================================
-
 if __name__ == "__main__":
 
+    from datetime import datetime, timedelta
+
     print("\n" + "=" * 70)
-    print("STAGE 5: BUILDING UNIFIED RECORDS (IMPROVED VERSION)")
+    print("BUILDING YEARLY METADATA")
     print("=" * 70 + "\n")
+
+    YEARS = [2021, 2022, 2023, 2024]
 
     pdf_index = build_pdf_index()
     client = SCIJudgementDateClient()
 
     try:
-        rows = client.search_with_metadata_by_date_range(
-            "01-01-2021",
-            "31-01-2021"
-        )
 
-        unified_records = []
-        skipped_missing_pdf = 0
-        skipped_text_fail = 0
+        for year in YEARS:
 
-        for row in rows[:50]:
+            print(f"\nProcessing Year: {year}")
 
-            pdf_url = row.get("pdf_url")
-            if not pdf_url:
-                skipped_missing_pdf += 1
-                continue
+            start_date = datetime(year, 1, 1)
+            end_date = datetime(year, 12, 31)
 
-            filename = pdf_url.split("/")[-1]
+            current_date = start_date
 
-            if filename not in pdf_index:
-                skipped_missing_pdf += 1
-                continue
+            unified_records = []
 
-            pdf_path = pdf_index[filename]
-            text = extract_text_from_pdf(pdf_path)
+            skipped_missing_pdf = 0
+            skipped_text_fail = 0
 
-            if not text:
-                skipped_text_fail += 1
-                continue
+            while current_date <= end_date:
 
-            pdf_metadata = extract_metadata_with_chunking(text)
-            unified = build_unified_record(row, pdf_metadata)
-            unified_records.append(unified)
+                interval_end = current_date + timedelta(days=30)
+                if interval_end > end_date:
+                    interval_end = end_date
 
-        print(f"\nBuilt {len(unified_records)} unified records")
-        print(f"Skipped (missing PDF): {skipped_missing_pdf}")
-        print(f"Skipped (text extraction failed): {skipped_text_fail}")
+                from_date = current_date.strftime("%d-%m-%Y")
+                to_date = interval_end.strftime("%d-%m-%Y")
 
-        output_dir = Path("data/final_metadata")
-        output_dir.mkdir(parents=True, exist_ok=True)
+                print(f"\nSearching {from_date} → {to_date}")
 
-        output_file = output_dir / "2021_final_metadata_structured.json"
+                # IMPORTANT: reopen search each time
+                rows = client.search_with_metadata_by_date_range(
+                    from_date,
+                    to_date
+                )
 
-        with open(output_file, "w", encoding="utf-8") as f:
-            json.dump(unified_records, f, indent=2, ensure_ascii=False)
+                print(f"Rows found: {len(rows)}")
 
-        print("\nSaved to:")
-        print(output_file.resolve())
+                for row in rows:
+
+                    pdf_url = row.get("pdf_url")
+                    if not pdf_url:
+                        skipped_missing_pdf += 1
+                        continue
+
+                    filename = pdf_url.split("/")[-1]
+
+                    if filename not in pdf_index:
+                        skipped_missing_pdf += 1
+                        continue
+
+                    pdf_path = pdf_index[filename]
+
+                    text = extract_text_from_pdf(pdf_path)
+
+                    if not text:
+                        skipped_text_fail += 1
+                        continue
+
+                    pdf_metadata = extract_metadata_with_chunking(text)
+
+                    unified = build_unified_record(row, pdf_metadata)
+
+                    unified_records.append(unified)
+
+                current_date = interval_end + timedelta(days=1)
+
+            print(f"\nBuilt {len(unified_records)} records for {year}")
+
+            output_dir = Path("data/final_metadata")
+            output_dir.mkdir(parents=True, exist_ok=True)
+
+            output_file = output_dir / f"{year}_final_metadata_structured.json"
+
+            with open(output_file, "w", encoding="utf-8") as f:
+                json.dump(unified_records, f, indent=2, ensure_ascii=False)
+
+            print("Saved to:", output_file)
 
     finally:
         client.close()

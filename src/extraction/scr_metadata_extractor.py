@@ -1,5 +1,7 @@
 import re
 from typing import List, Dict
+from collections import defaultdict
+from src.extraction.pdf_text_extractor import split_text_into_chunks
 
 
 # ===============================
@@ -7,14 +9,14 @@ from typing import List, Dict
 # ===============================
 
 def extract_court(text: str) -> str:
-    if "IN THE SUPREME COURT OF INDIA" in text:
+    if "SUPREME COURT OF INDIA" in text.upper():
         return "Supreme Court of India"
     return ""
 
 
 def extract_case_number(text: str) -> str:
     match = re.search(
-        r"(CRIMINAL|CIVIL|WRIT).*?NO\.?\s*\d+\s*OF\s*\d{4}",
+        r"(CRIMINAL|CIVIL|WRIT|SLP|C\.A\.|CRL\.A\.|R\.P\.).*?NO\.?.*?\d+.*?\d{4}",
         text,
         re.IGNORECASE,
     )
@@ -22,12 +24,25 @@ def extract_case_number(text: str) -> str:
 
 
 def extract_petition_type(case_number: str) -> str:
-    if "CRIMINAL" in case_number.upper():
+    if not case_number:
+        return ""
+
+    cn = case_number.upper()
+
+    if "CRL" in cn:
         return "Criminal Appeal"
-    if "CIVIL" in case_number.upper():
+    if "CIVIL" in cn or "C.A." in cn:
         return "Civil Appeal"
-    if "WRIT" in case_number.upper():
+    if "WRIT" in cn:
         return "Writ Petition"
+    if "SLP" in cn:
+        if "CRL" in cn:
+            return "Special Leave Petition (Criminal)"
+        return "Special Leave Petition (Civil)"
+    if "R.P." in cn:
+        if "CRL" in cn:
+            return "Review Petition (Criminal)"
+        return "Review Petition (Civil)"
     return ""
 
 
@@ -35,11 +50,15 @@ def extract_parties(text: str):
     petitioner = []
     respondent = []
 
-    pet_match = re.search(r"\n(.+?)\s*…?Appellant", text)
+    pet_match = re.search(r"\n(.+?)\s*…?\s*(Appellant|Petitioner)", text)
     if pet_match:
         petitioner.append(pet_match.group(1).strip())
 
-    resp_match = re.search(r"Versus\s*\n(.+?)\s*…?Respondents?", text, re.IGNORECASE)
+    resp_match = re.search(
+        r"Versus\s*\n(.+?)\s*…?\s*(Respondents?|Respondent)",
+        text,
+        re.IGNORECASE,
+    )
     if resp_match:
         respondent.append(resp_match.group(1).strip())
 
@@ -53,70 +72,93 @@ def extract_case_name(petitioner: List[str], respondent: List[str]) -> str:
 
 
 def extract_judges(text: str) -> List[str]:
-    judges = []
+    judges = set()
 
-    match = re.search(
-        r"J\s*U\s*D\s*G\s*M\s*E\s*N\s*T\s*\n(.+?)\,?\s*J\.?",
+    matches = re.findall(
+        r"JUSTICE\s+([A-Z.\s]+)",
         text,
         re.IGNORECASE,
     )
 
-    if match:
-        name = match.group(1).strip()
+    for m in matches:
+        clean = m.strip()
+        clean = re.sub(r"\s+", " ", clean)
+        clean = clean.title()
+        judges.add(clean)
 
-        # Remove unwanted patterns
-        name = re.sub(r",?\s*CJI.*", "", name, flags=re.IGNORECASE)
-        name = name.title()
+    return sorted(list(judges))
 
-        judges.append(name)
 
-    return judges
-
+# ===============================
+# Improved Section Extraction
+# ===============================
 
 def extract_sections(text: str) -> List[str]:
     sections = set()
 
-    matches = re.findall(
-        r"Sections?\s+([0-9,\sand]+)\s*IPC",
+    # Section 302 IPC / Sec. 420 / u/s 498A
+    pattern1 = re.findall(
+        r"(?:Section|Sec\.?|S\.?|u/s)\s*(\d+[A-Za-z\-]*)",
         text,
         re.IGNORECASE,
     )
 
-    for group in matches:
-        numbers = re.findall(r"\d+", group)
-        for num in numbers:
-            sections.add(num)
+    # Article 14 / Article 21
+    pattern2 = re.findall(
+        r"Article\s*(\d+[A-Za-z\-]*)",
+        text,
+        re.IGNORECASE,
+    )
 
-    return sorted(list(sections), key=lambda x: int(x))
+    for sec in pattern1:
+        sections.add(f"Section {sec}")
 
+    for art in pattern2:
+        sections.add(f"Article {art}")
 
-def extract_acts(text: str) -> List[str]:
-    acts = []
-
-    if re.search(r"\bIPC\b|\bIndian Penal Code\b", text, re.IGNORECASE):
-        acts.append("Indian Penal Code")
-
-    if re.search(r"\bCr\.?P\.?C\.?\b|Code of Criminal Procedure", text, re.IGNORECASE):
-        acts.append("Code of Criminal Procedure")
-
-    if re.search(r"Constitution of India", text, re.IGNORECASE):
-        acts.append("Constitution of India")
-
-    return list(set(acts))
-
-
-def extract_subject_categories(petition_type: str) -> List[str]:
-    if "Criminal" in petition_type:
-        return ["Criminal Law"]
-    if "Civil" in petition_type:
-        return ["Civil Law"]
-    if "Writ" in petition_type:
-        return ["Constitutional Law"]
-    return []
+    return sorted(list(sections))
 
 
 # ===============================
-# Main Extraction Function
+# Improved Act Detection
+# ===============================
+
+def extract_acts(text: str) -> List[str]:
+    acts = set()
+
+    patterns = {
+        "Indian Penal Code": r"\bIPC\b|\bIndian Penal Code\b",
+        "Code of Criminal Procedure": r"\bCr\.?P\.?C\.?\b|Code of Criminal Procedure",
+        "Constitution of India": r"\bConstitution\b",
+        "Evidence Act": r"\bEvidence Act\b",
+        "Motor Vehicles Act": r"\bMotor Vehicles Act\b",
+        "Income Tax Act": r"\bIncome Tax Act\b",
+    }
+
+    for act, pattern in patterns.items():
+        if re.search(pattern, text, re.IGNORECASE):
+            acts.add(act)
+
+    return sorted(list(acts))
+
+
+def extract_subject_categories(petition_type: str, acts: List[str]) -> List[str]:
+    subjects = set()
+
+    if "Indian Penal Code" in acts or "Criminal" in petition_type:
+        subjects.add("Criminal Law")
+
+    if "Constitution of India" in acts or "Writ" in petition_type:
+        subjects.add("Constitutional Law")
+
+    if not subjects:
+        subjects.add("Civil Law")
+
+    return sorted(list(subjects))
+
+
+# ===============================
+# Base Extraction
 # ===============================
 
 def extract_metadata(text: str) -> Dict:
@@ -131,7 +173,7 @@ def extract_metadata(text: str) -> Dict:
     judges = extract_judges(text)
     sections_referred = extract_sections(text)
     acts_referred = extract_acts(text)
-    subject_categories = extract_subject_categories(petition_type)
+    subject_categories = extract_subject_categories(petition_type, acts_referred)
 
     return {
         "court": court,
@@ -146,88 +188,65 @@ def extract_metadata(text: str) -> Dict:
         "sections_referred": sections_referred,
         "subject_categories": subject_categories,
     }
-from collections import defaultdict
-from src.extraction.pdf_text_extractor import split_text_into_chunks
 
 
-def extract_metadata_with_chunking(full_text: str) -> dict:
-    """
-    Improved metadata extraction using chunk-based parsing.
+# ===============================
+# Chunk-Based Aggregation
+# ===============================
 
-    Strategy:
-    - Split text into chunks
-    - Extract metadata from each chunk
-    - Merge strongest signals
-    """
+def extract_metadata_with_chunking(full_text: str) -> Dict:
 
     if not full_text:
         return {}
 
     chunks = split_text_into_chunks(full_text)
 
-    aggregated = {
+    # PRIORITIZE FIRST 3 CHUNKS (header + summary)
+    priority_chunks = chunks[:3]
+    remaining_chunks = chunks[3:]
+
+    aggregated = defaultdict(set)
+    final = {
         "court": "",
         "case_number": "",
         "petition_type": "",
-        "petition_format": "",
-        "judges": set(),
-        "petitioner": set(),
-        "respondent": set(),
-        "case_name": "",
-        "acts_referred": set(),
-        "sections_referred": set(),
-        "subject_categories": set(),
     }
 
-    for chunk in chunks:
-        meta = extract_metadata(chunk)
+    # Process priority chunks fully
+    for chunk in priority_chunks:
 
-        # Court
-        if not aggregated["court"] and meta.get("court"):
-            aggregated["court"] = meta["court"]
+        if not final["court"]:
+            final["court"] = extract_court(chunk)
 
-        # Case Number
-        if not aggregated["case_number"] and meta.get("case_number"):
-            aggregated["case_number"] = meta["case_number"]
+        if not final["case_number"]:
+            final["case_number"] = extract_case_number(chunk)
 
-        # Petition Type
-        if meta.get("petition_type"):
-            aggregated["petition_type"] = meta["petition_type"]
+        aggregated["judges"].update(extract_judges(chunk))
+        aggregated["acts_referred"].update(extract_acts(chunk))
+        aggregated["sections_referred"].update(extract_sections(chunk))
 
-        # Judges
-        for j in meta.get("judges", []):
-            aggregated["judges"].add(j)
+    # Remaining chunks: only extract sections & acts
+    for chunk in remaining_chunks:
+        aggregated["acts_referred"].update(extract_acts(chunk))
+        aggregated["sections_referred"].update(extract_sections(chunk))
 
-        # Parties
-        for p in meta.get("petitioner", []):
-            aggregated["petitioner"].add(p)
+    final["petition_type"] = extract_petition_type(final["case_number"])
 
-        for r in meta.get("respondent", []):
-            aggregated["respondent"].add(r)
+    subject_categories = extract_subject_categories(
+        final["petition_type"],
+        list(aggregated["acts_referred"]),
+    )
 
-        # Acts
-        for act in meta.get("acts_referred", []):
-            aggregated["acts_referred"].add(act)
-
-        # Sections
-        for sec in meta.get("sections_referred", []):
-            aggregated["sections_referred"].add(sec)
-
-        # Subjects
-        for sub in meta.get("subject_categories", []):
-            aggregated["subject_categories"].add(sub)
-
-    # Convert sets back to lists
     return {
-        "court": aggregated["court"],
-        "case_number": aggregated["case_number"],
-        "petition_type": aggregated["petition_type"],
+        "court": final["court"],
+        "case_number": final["case_number"],
+        "petition_type": final["petition_type"],
         "petition_format": "",
         "judges": sorted(list(aggregated["judges"])),
-        "petitioner": sorted(list(aggregated["petitioner"])),
-        "respondent": sorted(list(aggregated["respondent"])),
+        "petitioner": [],
+        "respondent": [],
         "case_name": "",
         "acts_referred": sorted(list(aggregated["acts_referred"])),
         "sections_referred": sorted(list(aggregated["sections_referred"])),
-        "subject_categories": sorted(list(aggregated["subject_categories"])),
+        "subject_categories": subject_categories,
     }
